@@ -5,10 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .info {
+            background-color: pink;
+            color: red;
+            font-size: 20px;
+            width: 30%;
+            margin-top: 30px;
+            padding: 5px 0;
+            
+        }
+        input {
+            padding: 5px;
+            color: brown;
+            width: 30%;
+            font-size:20px;
+            border: 2px solid blue ;
+       
+        }
+        button {
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            background-color: orangered;
+            border: 1px solid orangered;
+            border-radius: 5%;
+        }
+    </style>
+
 </head>
 <body>
     <h1>BÀI TẬP JS BUỔI 2-3</h1>
+    <h2>Bài 1: Tính tiền lương nhân viên</h2>
+    <h3>Lương 1 ngày công</h3>
+    <input id="salaryPerDay" type="text" placeholder="Lương ngày công">
+    <h3>Số ngày làm việc</h3>
+    <input id="workDays" type="number" placeholder="Số ngày làm"> <br> <br>
+    <button onclick="totalSalary()">Tổng lương</button>
+    <div id="print"></div>
+
+    <hr>
     
+    <h2>Bài 2: Tính giá trị trung bình</h2>
+
 
     <script src="./index.js"></script>
 </body>
