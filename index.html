@@ -18,18 +18,28 @@
         input {
             padding: 5px;
             color: brown;
-            width: 30%;
+            width: 20%;
             font-size:20px;
             border: 2px solid blue ;
+            margin: 0px 50px 0 15px;
        
         }
         button {
             color: white;
             font-size: 20px;
-            padding: 10px 20px;
+            padding: 5px 15px;
+            margin-left:15px ;
             background-color: orangered;
             border: 1px solid orangered;
             border-radius: 5%;
+        }
+        span {
+            font-size: 20px;
+            font-weight: bold;
+           
+        }
+        div {
+            height: 100px;
         }
     </style>
 
@@ -59,6 +69,42 @@
     <input id="numR5" type="number" placeholder="Nhập số thứ năm"> <br> <br>
     <button onclick="averageValue()">Tính trung bình</button>
     <div id="show"></div>
+
+    <hr>
+    <h2>Bài 3: Tính tiền quy đổi</h2>
+    <h3>Tỷ giá USD hiện tại</h3>
+    <input id="oneUsd" type="number" value="23500">
+    <h3>Số tiền cần quy đổi</h3>
+    <input id="numberOfUsd" type="number" placeholder="Số tiền USD cần quy đổi"> <br><br>
+    <button onclick="exchangeMoney()">Tiền quy đổi sang VND</button> 
+    <div id="showMoney"></div>
+
+    <hr>
+
+    <h2>Bài 4: Tính chu vi, diện tích hình chữ nhật</h2>
+    <span>Chiều dài  hình chữ nhật:</span>
+    <input id="length" type="number" placeholder="Nhập chiều dài"> 
+    <Span>Chiều rộng hình chữ nhật:</Span>
+    <input id="width" type="number" placeholder="Nhập chiều rộng "> <br> <br>
+    <button onclick="calculate()">Tính</button>
+    <div id="show_1"></div>
+
+    <hr>
+    <div>
+        <h2>Bài 5: Tính tổng 2 ký số</h2>
+        <h3>Nhập 1 số có 2 chữ số</h3>
+        <input id="num_1" type="number" placeholder="Nhập số hai chữ số">
+        <button onclick="sum()">Tổng 2 ký số</button>
+        <div id="show_2"></div>
+
+    </div>
+   
+
+
+
+
+
+
 
 
     <script src="./index.js"></script>
